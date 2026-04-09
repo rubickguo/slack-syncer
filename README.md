@@ -67,15 +67,6 @@ npm run build
 4. 选择导出目录和格式。
 5. 开始同步。
 
-## 开源发布建议
-
-如果你要在 GitHub 创建公开仓库，建议：
-
-- 仓库展示名使用 `slack同步器`
-- 仓库 slug 使用 ASCII，例如 `slack-syncer`
-- 仓库描述可以写成：
-  `A desktop Slack sync tool built on top of slackdump.`
-
 ## 许可证
 
 本仓库沿用 GPL-3.0。详情见 [LICENSE](LICENSE) 和 [ATTRIBUTION.md](ATTRIBUTION.md)。
