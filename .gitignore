@@ -1,0 +1,54 @@
+# Editors
+.idea/
+.vscode/
+.gonvim/
+.DS_Store
+
+# Go build and test artifacts
+*.test
+*.out
+__debug_bin/
+__debug_bin*
+debug.test*
+*.pprof
+*.prof
+*.pf
+cmd/slackdump/slackdump
+cmd/sdconv/sdconv
+/slackdump
+
+# Local environment and temporary files
+.env
+*.cache
+*.log
+*.state
+*.swp
+*~
+/.gocache/
+/.npm-cache/
+/tmp/
+/json/
+/examples/
+/experiments/
+
+# Release and installer artifacts
+/dist/
+/go1.25.5.windows-amd64.msi
+
+# Local exports and private workspace data
+/output/
+/gui/
+
+# SlackSyncGUI local build artifacts and sample exports
+/SlackSyncGUI/C40CE7QQK.json
+/SlackSyncGUI/C40CE7QQK.md
+/SlackSyncGUI/C40CE7QQK.pdf
+/SlackSyncGUI/gui.exe
+/SlackSyncGUI/SlackSyncTool.exe
+/SlackSyncGUI/slackdump.db
+/SlackSyncGUI/build.log
+/SlackSyncGUI/build_verbose.log
+/SlackSyncGUI/frontend/dist/*
+!/SlackSyncGUI/frontend/dist/.keep
+/SlackSyncGUI/frontend/node_modules/
+/SlackSyncGUI/frontend/package.json.md5

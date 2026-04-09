@@ -1,0 +1,23 @@
+package control
+
+// In this file: dummies for the transformer and filer, if the user chooses
+// not to plug in any transformers.
+
+import (
+	"context"
+
+	"github.com/rusq/slack"
+
+	"github.com/rusq/slackdump/v3/processor"
+)
+
+type (
+	noopFiler      = processor.NopFiler
+	noopAvatarProc = processor.NopAvatars
+)
+
+type noopExpTransformer struct{}
+
+func (*noopExpTransformer) StartWithUsers(context.Context, []slack.User) error { return nil }
+func (*noopExpTransformer) Transform(context.Context, string, string) error    { return nil }
+func (*noopExpTransformer) Wait() error                                        { return nil }
